@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constSearch"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80D8FF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo_bhaina_2"
+        android:textColor="#7CB342"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGoOrderPost"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/buttonOS"
+        android:layout_width="130dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#4CAF50"
+        android:fontFamily="@font/baloo_bhaina_2"
+        app:cornerRadius="8dp"
+        app:iconGravity="end"
+        android:gravity="center"
+        app:icon="@android:drawable/ic_menu_search"
+        android:onClick="petInfo"
+        android:text="Find"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toTopOf="@+id/petID"
+        app:layout_constraintEnd_toEndOf="@+id/petID"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/petID" />
+
+    <EditText
+        android:id="@+id/petID"
+        android:layout_width="187dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#43A047"
+        android:ems="10"
+        android:hint="enter id"
+        android:inputType="number"
+        android:fontFamily="@font/baloo_bhaina_2"
+        android:gravity="center"
+        android:textColor="#A7FFEB"
+        android:textColorHint="#84FFFF"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonOS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonGoOrderPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#8BC34A"
+        android:fontFamily="@font/baloo_bhaina_2"
+        android:onClick="goPost"
+        android:text="go to post"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/osMenu"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/baloo_bhaina_2"
+        android:gravity="center_horizontal|center_vertical"
+        android:onClick="goMenu"
+        android:padding="0dp"
+        android:text="Menu"
+        app:icon="@android:drawable/ic_menu_sort_by_size"
+        app:iconGravity="top"
+        app:iconPadding="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
